@@ -1,0 +1,371 @@
+#include <iostream>
+#include <conio.h>
+#include <iomanip>
+#include <string>
+#include <windows.h>
+
+using namespace std;
+
+struct t_orificios {
+	string gases[7];
+	int ori, opcion;
+
+};
+
+void main() {
+	
+
+	t_orificios orificios;
+	while (orificios.opcion != 2) {
+		cout << "ORIFICIOS DAMFOS " << endl;
+		cout << "1-desea calcular la capacidad nominal en toneladas (TR) y (KW) " << endl;
+		cout << "2-salir" << endl;
+		cin >> orificios.opcion;
+
+		switch (orificios.opcion) {
+		case 1:
+
+			cout << "seleccione el tipo de gas ( numero en parentesis)" << endl;
+			cout << "(1) R134a" << endl;
+			cout << "(2) R404A" << endl;
+			cout << "(3) R407C" << endl;
+			cout << "(4) R22" << endl;
+			cout << "(5) R236fa" << endl;
+			cout << "(6) R407F" << endl;
+			cout << "(7) R407A" << endl;
+			cin >> orificios.opcion;
+			system("cls");
+
+			switch (orificios.opcion) {
+			case 1:
+				while (orificios.ori != 7) {
+
+
+					cout << "R134a" << endl;
+					cout << " ingrese un orificio (numeros comprendidos desde el 00 hasta el 06 ): ";
+					cin >> orificios.ori;
+
+
+					if (orificios.ori == 00) {
+						cout << orificios.ori << " = " << 0.34 << "(TR)" << endl;
+						cout << orificios.ori << " = " << 1.201 << "(KW)" << endl;
+					}
+
+					if (orificios.ori == 01) {
+						cout << orificios.ori << " = " << 0.59 << "(TR)" << endl;
+						cout << orificios.ori << " = " << 2.101 << "(KW)" << endl;
+					}
+
+					if (orificios.ori == 02) {
+						cout << orificios.ori << " = " << 0.73 << "(TR)" << endl;
+						cout << orificios.ori << " = " << 2.601 << "(KW)" << endl;
+					}
+
+					if (orificios.ori == 03) {
+						cout << orificios.ori << " = " << 1.21 << "(TR)" << endl;
+						cout << orificios.ori << " = " << 4.301 << "(KW)" << endl;
+					}
+
+					if (orificios.ori == 04) {
+						cout << orificios.ori << " = " << 1.801 << "(TR)" << endl;
+						cout << orificios.ori << " = " << 6.401 << "(KW)" << endl;
+					}
+
+					if (orificios.ori == 05) {
+						cout << orificios.ori << " = " << 2.401 << "(TR)" << endl;
+						cout << orificios.ori << " = " << 8.401 << "(KW)" << endl;
+					}
+					if (orificios.ori == 06) {
+						cout << orificios.ori << " = " << 2.901 << "(TR)" << endl;
+						cout << orificios.ori << " = " << 10.101 << "(KW)" << endl;
+					}
+
+
+
+
+
+
+
+
+
+				}
+			case 2:
+				while (orificios.ori != 7) {
+
+
+					cout << "R404A" << endl;
+					cout << " ingrese un orificio (numeros comprendidos desde el 001 hasta el 06): ";
+					cin >> orificios.ori;
+
+
+					if (orificios.ori == 01) {
+						cout << orificios.ori << " = " << 0.37 << "(TR)" << endl;
+						cout << orificios.ori << " = " << 1.301 << "(KW)" << endl;
+					}
+
+					if (orificios.ori == 02) {
+						cout << orificios.ori << " = " << 0.75 << "(TR)" << endl;
+						cout << orificios.ori << " = " << 2.601 << "(KW)" << endl;
+					}
+
+					if (orificios.ori == 03) {
+						cout << orificios.ori << " = " << 1.001 << "(TR)" << endl;
+						cout << orificios.ori << " = " << 3.701 << "(KW)" << endl;
+					}
+
+					if (orificios.ori == 04) {
+						cout << orificios.ori << " = " << 1.801 << "(TR)" << endl;
+						cout << orificios.ori << " = " << 6.301 << "(KW)" << endl;
+					}
+
+					if (orificios.ori == 05) {
+						cout << orificios.ori << " = " << 2.801 << "(TR)" << endl;
+						cout << orificios.ori << " = " << 9.901 << "(KW)" << endl;
+					}
+
+					if (orificios.ori == 06) {
+						cout << orificios.ori << " = " << 3.701 << "(TR)" << endl;
+						cout << orificios.ori << " = " << 13.001 << "(KW)" << endl;
+					}
+					if (orificios.ori == 07) {
+						cout << orificios.ori << " = " << 4.401 << "(TR)" << endl;
+						cout << orificios.ori << " = " << 15.501 << "(KW)" << endl;
+					}
+
+				}
+
+			case 3:
+				while (orificios.ori != 7) {
+
+
+					cout << "R407C" << endl;
+					cout << " ingrese un orificio (numeros comprendidos desde el 00 hasta el 06): ";
+					cin >> orificios.ori;
+
+
+
+					if (orificios.ori == 00) {
+						cout << orificios.ori << " = " << 0.51 << "(TR)" << endl;
+						cout << orificios.ori << " = " << 1.801 << endl;
+					}
+
+					if (orificios.ori == 01) {
+						cout << orificios.ori << " = " << 1.001 << "(TR)" << endl;
+						cout << orificios.ori << " = " << 3.50 << "(KW)" << endl;
+					}
+
+					if (orificios.ori == 02) {
+						cout << orificios.ori << " = " << 1.401 << "(TR)" << endl;
+						cout << orificios.ori << " = " << 4.801 << "(KW)" << endl;
+					}
+
+					if (orificios.ori == 03) {
+						cout << orificios.ori << " = " << 2.301 << "(TR)" << endl;
+						cout << orificios.ori << " = " << 8.101 << "(KW)" << endl;
+					}
+
+					if (orificios.ori == 04) {
+						cout << orificios.ori << " = " << 3.501 << "(TR)" << endl;
+						cout << orificios.ori << " = " << 12.401 << "(KW)" << endl;
+					}
+
+					if (orificios.ori == 05) {
+						cout << orificios.ori << " = " << 4.701 << "(TR)" << endl;
+						cout << orificios.ori << " = " << 16.50 << endl;
+					}
+					if (orificios.ori == 06) {
+						cout << orificios.ori << " = " << 5.601 << "(TR)" << endl;
+						cout << orificios.ori << " = " << 19.701 << "(KW)" << endl;
+					}
+
+				}
+			case 4:
+				while (orificios.ori != 8) {
+
+
+					cout << "R22" << endl;
+					cout << " ingrese un orificio (numeros comprendidos desde el 00 hasta el 06): ";
+					cin >> orificios.ori;
+
+
+
+
+					if (orificios.ori == 00) {
+						cout << orificios.ori << " = " << 0.501 << "(TR)" << endl;
+						cout << orificios.ori << " = " << 1.801 << "(KW)" << endl;
+					}
+
+					if (orificios.ori == 01) {
+						cout << orificios.ori << " = " << 1.001 << "(TR)" << endl;
+						cout << orificios.ori << " = " << 3.501 << "(KW)" << endl;
+					}
+
+					if (orificios.ori == 02) {
+						cout << orificios.ori << " = " << 1.301 << "(TR)" << endl;
+						cout << orificios.ori << " = " << 4.701 << "(KW)" << endl;
+					}
+
+					if (orificios.ori == 03) {
+						cout << orificios.ori << " = " << 2.301 << "(TR)" << endl;
+						cout << orificios.ori << " = " << 8.001 << "(KW)" << endl;
+					}
+
+					if (orificios.ori == 04) {
+						cout << orificios.ori << " = " << 3.401 << "(TR)" << endl;
+						
+						cout << orificios.ori << " = " << 12.101 << "(KW)" << endl;
+					}
+
+					if (orificios.ori == 05) {
+						cout << orificios.ori << " = " << 4.801 << "(TR)" << endl;
+						cout << orificios.ori << " = " << 16.701 << "(KW)" << endl;
+					}
+					if (orificios.ori == 06) {
+						cout << orificios.ori << " = " << 5.601 << "(TR)" << endl;
+						cout << orificios.ori << " = " << 19.701 << "(KW)" << endl;
+					}
+
+				}
+
+
+			case 5:
+				while (orificios.ori != 8) {
+
+
+					cout << "R236fa" << endl;
+					cout << " ingrese un orificio (numeros comprendidos desde el 00 hasta el 06): ";
+					cin >> orificios.ori;
+
+
+					if (orificios.ori == 00) {
+						cout << orificios.ori << " = " << 0.11 << "(TR)" << endl;
+						cout << orificios.ori << " = " << 0.39 << "(KW)" << endl;
+					}
+
+					if (orificios.ori == 01) {
+						cout << orificios.ori << " = " << 0.16 << "(TR)" << endl;
+						cout << orificios.ori << " = " << 0.55 << "(KW)" << endl;
+					}
+
+					if (orificios.ori == 02) {
+						cout << orificios.ori << " = " << 0.18 << "(TR)" << endl;
+						cout << orificios.ori << " = " << 0.62 << "(KW)" << endl;
+					}
+
+					if (orificios.ori == 03) {
+						cout << orificios.ori << " = " << 0.301 << "(TR)" << endl;
+						cout << orificios.ori << " = " << 1.001 << "(KW)" << endl;
+					}
+
+					if (orificios.ori == 04) {
+						cout << orificios.ori << " = " << 0.43 << "(TR)" << endl;
+						cout << orificios.ori << " = " << 1.501 << "(KW)" << endl;
+					}
+
+					if (orificios.ori == 05) {
+						cout << orificios.ori << " = " << 0.57 << "(TR)" << endl;
+						cout << orificios.ori << " = " << 2.001 << "(KW)" << endl;
+					}
+					if (orificios.ori == 06) {
+						cout << orificios.ori << " = " << 0.69 << "(TR)" << endl;
+						cout << orificios.ori << " = " << 2.401 << "(KW)" << endl;
+					}
+
+				}
+
+
+			case 6:
+				while (orificios.ori != 8) {
+
+
+					cout << "R407F" << endl;
+					cout << " ingrese un orificio (numeros comprendidos desde el 00 hasta el 06): ";
+					cin >> orificios.ori;
+
+
+					if (orificios.ori == 00) {
+						cout << orificios.ori << " = " << 0.56 << "(TR)" << endl;
+						cout << orificios.ori << " = " << 2.001 << "(KW)" << endl;
+					}
+
+					if (orificios.ori == 01) {
+						cout << orificios.ori << " = " << 1.101 << "(TR)" << endl;
+						cout << orificios.ori << " = " << 3.901 << "(KW)" << endl;
+					}
+
+					if (orificios.ori == 02) {
+						cout << orificios.ori << " = " << 1.501 << "(TR)" << endl;
+						cout << orificios.ori << " = " << 5.40 << endl;
+					}
+
+					if (orificios.ori == 03) {
+						cout << orificios.ori << " = " << 2.601 << "(TR)" << endl;
+						cout << orificios.ori << " = " << 9.201 << "(KW)" << endl;
+					}
+
+					if (orificios.ori == 04) {
+						cout << orificios.ori << " = " << 4.101 << "(TR)" << endl;
+						cout << orificios.ori << " = " << 14.301 << "(KW)" << endl;
+					}
+
+					if (orificios.ori == 05) {
+						cout << orificios.ori << " = " << 5.401 << "(TR)" << endl;
+						cout << orificios.ori << " = " << 19.001 << "(KW)" << endl;
+					}
+					if (orificios.ori == 06) {
+						cout << orificios.ori << " = " << 6.501 << "(TR)" << endl;
+						cout << orificios.ori << " = " << 22.901 << "(KW)" << endl;
+					}
+
+
+				}
+
+
+			case 7:
+				while (orificios.ori != 8) {
+
+
+					cout << "R407A" << endl;
+					cout << " ingrese un orificio (numeros comprendidos desde el 00 hasta el 06): ";
+					cin >> orificios.ori;
+
+
+					if (orificios.ori == 00) {
+						cout << orificios.ori << " = " << 0.49 << "(TR)" << endl;
+						cout << orificios.ori << " = " << 1.701 << "(KW)" << endl;
+					}
+
+					if (orificios.ori == 01) {
+						cout << orificios.ori << " = " << 1.001 << "(TR)" << endl;
+						cout << orificios.ori << " = " << 3.401 << "(KW)" << endl;
+					}
+
+					if (orificios.ori == 02) {
+						cout << orificios.ori << " = " << 1.301 << "(TR)" << endl;
+						cout << orificios.ori << " = " << 4.701 << "(KW)" << endl;
+					}
+
+					if (orificios.ori == 03) {
+						cout << orificios.ori << " = " << 2.301 << "(TR)" << endl;
+						cout << orificios.ori << " = " << 8.001 << "(KW)" << endl;
+					}
+
+					if (orificios.ori == 04) {
+						cout << orificios.ori << " = " << 3.501 << "(TR)" << endl;
+						cout << orificios.ori << " = " << 12.401 << "(KW)" << endl;
+					}
+
+					if (orificios.ori == 05) {
+						cout << orificios.ori << " = " << 4.601 << "(TR)" << endl;
+						cout << orificios.ori << " = " << 16.301 << "(KW)" << endl;
+					}
+					if (orificios.ori == 06) {
+						cout << orificios.ori << " = " << 5.601 << "(TR)" << endl;
+						cout << orificios.ori << " = " << 19.601 << "(KW)" << endl;
+					}
+				}
+			}
+		}
+	}
+}
+
